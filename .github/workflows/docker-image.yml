@@ -35,10 +35,10 @@ jobs:
           images: stargamers/ntopng
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v3.4.0
       -
         name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v3.9.0
 
       - name: Build and push Docker image
         id: push
